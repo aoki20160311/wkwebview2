@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width">
+                <title>Document</title>
+                </head>
+    <body>
+        <script type="text/javascript">
+            <!--
+            MyWebkitNamespace = window.webkit;
+            
+            (function () {
+             var _close = window.close;
+             window.close = function () {
+             console.log( "windows close" );
+             webkit.messageHandlers.windowClose.postMessage("test|hoge");
+             //_close();
+             };
+             })
+             
+             /* Swift→javascript */
+             (function returnMessage(message) {
+              
+              //message      /* messageが戻り値 */
+              var mes = message;
+              return mes;
+              //console.log( "message"  + message);
+              })
+              
+              /* Swift→javascript */
+              (function sum(a, b) {
+               return a + b;
+               })
+               
+               
+            </script>
+        <h1>テストページ</h1>
+        <p>ローカルのHTMLを表示</p>
+        <a href="javascript:void(0);" onclick="window.close();">閉じる</a>
+    </body>
+</html>
